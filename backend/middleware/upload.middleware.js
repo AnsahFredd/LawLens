@@ -1,4 +1,3 @@
-// src/middleware/upload.middleware.ts
 import multer from "multer";
 
 import { fileURLToPath } from "url";
@@ -10,7 +9,7 @@ const __dirname = path.dirname(__filename);
 import fs from "fs";
 
 // Define uploads directory path
-const uploadDir = path.join(__dirname, "../../uploads");
+const uploadDir = path.join(__dirname, "../uploads");
 
 // Check if upload directory exits if not create one
 if (!fs.existsSync(uploadDir)) {

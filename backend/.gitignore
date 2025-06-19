@@ -56,6 +56,13 @@ typings/
 
 # dotenv environment variables file
 .env
+.env.*
+.env.*.local
+
 
 # next.js build output
 .next
+
+# Ignore all uploads folders in any subdirectory
+uploads/
+**/uploads/

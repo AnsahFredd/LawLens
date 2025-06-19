@@ -21,7 +21,7 @@ export const uploadDocument = async (req, res, next) => {
       return res.status(400).json({ message: "No file uploaded" });
     }
 
-    filePath = path.join(__dirname, "../../uploads", req.file.filename);
+    filePath = path.join(__dirname, "../uploads", req.file.filename);
 
     if (!fs.existsSync(filePath)) {
       return res.status(400).json({ error: "Uploaded file not found" });
